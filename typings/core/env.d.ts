@@ -1,0 +1,1 @@
+export declare type CustomHostname = Bun.env.HOSTNAME

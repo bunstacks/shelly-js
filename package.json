@@ -1,0 +1,65 @@
+{
+    "type": "module",
+    "main": "./cli.ts",
+    "version": "0.0.1",
+    "keywords": [
+        "bun",
+        "shell",
+        "realm"
+    ],
+    "author": {
+        "name": "davi"
+    },
+    "license": "MIT",
+    "eslintConfig": {
+        "env": {
+            "node": true,
+            "es2022": true,
+            "shelljs": true,
+            "webextensions": true,
+            "worker": true
+        }
+    },
+    "name": "@bunstacks/shelly.js",
+    "bin": {
+        "shelly": "./src/cli.ts"
+    },
+    "scripts": {
+        "dev": "bun run src/cli.ts"
+    },
+    "devDependencies": {
+        "@logto/browser": "^2.2.2",
+        "@logto/client": "^2.3.3",
+        "@logto/connector-kit": "^2.0.0",
+        "@logto/js": "^3.0.2",
+        "@logto/node": "^2.3.0",
+        "@logto/ts-config": "^0.2.1",
+        "@swc/cli": "^0.3.5",
+        "@swc/core": "^1.3.107",
+        "@swc/wasm": "^1.3.107",
+        "@types/bun": "latest",
+        "@types/eslint": "^8.56.2",
+        "@types/node": "^20.11.12",
+        "@types/prettier": "^3.0.0",
+        "@types/systemjs": "^6.13.5",
+        "@typescript-eslint/parser": "^6.20.0",
+        "@wasmer/sdk": "^0.6.0",
+        "@wasmer/wasi": "^1.2.2",
+        "@ziglang/cli": "^0.0.12",
+        "better-sqlite3": "^9.3.0",
+        "bun-devtools": "^0.0.2",
+        "drizzle-kit": "^0.20.13",
+        "drizzle-orm": "^0.29.3",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "ngrok": "^5.0.0-beta.2",
+        "prettier": "^3.2.4",
+        "typescript": "^5.3.3",
+        "wasi-js": "^1.7.3"
+    },
+    "dependencies": {
+        "@sinclair/typebox": "^0.32.13",
+        "@sinclair/typebox-codegen": "^0.9.7"
+    }
+}
